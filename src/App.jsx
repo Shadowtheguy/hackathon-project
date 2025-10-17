@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-    <Personal></Personal>
+    <Top50></Top50>
     </>
   )
 }
