@@ -4,6 +4,9 @@ import data from "./data/data.json"
 import Top50 from "./pages/Top50.jsx"
 import Personal from "./pages/Personal.jsx"
 import Home from './pages/Home.jsx'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+
 function App() {
  const [popularSong, setpopularSong] = useState(0)
 
