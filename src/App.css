@@ -1,16 +1,18 @@
 * {
-  background-color: #fcd0a1;
+  background-color: #F3D7C6;
 }
 
-/* .nav-bar {
-  border-bottom: #000000;
-  border-width: 100px;
-} */
-
-.titles {
-  color: #961f47;
+.navborders {
+  border-bottom-color: #890000;
+  border-top-color: #890000;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-width: 4px;
+  border-radius: 100px;
+  background-color: #FFC587;
 }
 
-.descriptors {
-  color: #63535b;
+.navbuttons {
+  background-color: #5f8754cd;
+  border-radius: 10px;
 }

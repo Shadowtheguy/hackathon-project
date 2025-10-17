@@ -3,7 +3,20 @@
 function Home (){
     return(
         <>
-        <h1>Home</h1>
+        <section className="container">
+            <h1 className="text-center">Music Rankings!</h1>
+        </section>
+        <section className="container">
+            <nav className="navbar navborders">
+                <button className="mx-auto navbuttons">Home</button>
+                <button className="mx-auto navbuttons">Top 50</button>
+                <button className="mx-auto navbuttons">Personal List</button>
+            </nav>
+        </section>
+        <section className="container">
+            <h2 className="text-center m-3">Home</h2>
+            <p className="text-center">Welcome to our website! Here you can look through the top 50 songs in the U.S. as of October 2025, as well as look at some personal favorites of ours! All of our data comes from the spotify top charts, except of course for our opinions.</p>
+        </section>
         </>
     )
 }
