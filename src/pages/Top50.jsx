@@ -2,16 +2,6 @@ function Top50 (){
     return(
         <>
         <section className="container">
-            <h1 className="text-center">Music Rankings!</h1>
-        </section>
-        <section className="container">
-            <nav className="navbar navborders">
-                <button className="mx-auto navbuttons">Home</button>
-                <button className="mx-auto navbuttons">Top 50</button>
-                <button className="mx-auto navbuttons">Personal List</button>
-            </nav>
-        </section>
-        <section className="container">
             <h2 className="text-center m-2">Top 50 Songs US!</h2>
             <p className="text-center m-1">Here is the top 50 songs as of October 2025 in the US streaming, information provided comes directly from Spotify top charts.</p>
         </section>

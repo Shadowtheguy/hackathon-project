@@ -8,11 +8,51 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 function App() {
- const [popularSong, setpopularSong] = useState(0)
 
+  //* Use State Setup
+  const [currentPage, setCurrentPage] = useState('Home')
+
+  //* Misc Variables
+  let pageContent = <Home />
+
+  //* On Events
+
+  // Page Switching
+  function switchPageHome () {
+    setCurrentPage('Home')
+  }
+
+  function switchPageTop50 () {
+    setCurrentPage('Top50')
+  }
+
+  function switchPagePersonal () {
+    setCurrentPage('Personal')
+  }
+
+  //* Page Selection
+  if (currentPage === 'Home') {
+    pageContent = <Home />
+  } else if (currentPage === 'Top50') {
+    pageContent = <Top50 />
+  } else if (currentPage === 'Personal') {
+    pageContent = <Personal />
+  }
+
+  //* Actual Page
   return (
     <>
-    <Top50></Top50>
+      <section className="container">
+        <h1 className="text-center">Music Rankings!</h1>
+      </section>
+        <section className="container">
+          <nav className="navbar navborders">
+            <button className="mx-auto navbuttons" onClick={switchPageHome}>Home</button>
+            <button className="mx-auto navbuttons" onClick={switchPageTop50}>Top 50</button>
+            <button className="mx-auto navbuttons" onClick={switchPagePersonal}>Personal List</button>
+          </nav>
+      </section>
+      {pageContent}
     </>
   )
 }
