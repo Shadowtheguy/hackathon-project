@@ -1,15 +1,7 @@
 function Personal (){
     return(
         <>
-        <section className="container">
-            <h1 className="text-center">Music Rankings!</h1>
-        </section>
-        <section className="container">
-            <nav className="navbar navborders">
-                <button className="mx-auto navbuttons">Home</button>
-                <button className="mx-auto navbuttons">Top 50</button>
-                <button className="mx-auto navbuttons">Personal List</button>
-            </nav>
+        <section>
             <h2 class="text-center m-2">Personal favorites and dislikes</h2>
             <p class="text-center m-4">Alphonso and Dylan decided to hand select the songs they like and dislike just incase you cared to know their opinion on the top 50</p>
         </section>
